@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Seminar Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ajoy kumar soni">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="forms">
+        <div>
+            <h1>SEMINAR <br> REGISTRATION</h1>
+        </div>
+        <div></div>
+
+        <div id="form-1" class="form-style">
+            <form action="" method="POST" id="form-one">
+
+                <h3>Personal Information</h3>
+
+                <fieldset id="form-1-section-1" class="form-section">
+                    <legend>Introduction</legend>
+                    <label for="name">Name</label><br>
+                    <input type="text" name="name" class="stringVerify" required><br><br>
+
+                    <label for="gender">Gender : </label>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" value="male" required>
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" value="female" required>
+                    <label for="other">Other</label>
+                    <input type="radio" name="gender" value="other" required><br><br>
+
+                    <label for="reg-type">Profession</label><br>
+                    <select name="reg-type" required>
+                        <option value=0>Student</option>
+                        <option value=1>Faculty Member</option>
+                        <option value=2>Comapany Representative</option>
+                        <option value=3>Other</option>
+                    </select><br><br>
+
+                </fieldset><br><br>
+
+                <fieldset id="form-1-section-2" class="form-section">
+
+                    <legend>Contact Details</legend>
+
+                    <label for="city">City</label><br>
+                    <input type="text" name="city" class="stringVerify" required><br><br>
+
+                    <label for="address">Address</label><br>
+                    <textarea name="address" cols="40" rows="5" style="resize: none;" required>
+                    </textarea><br><br>
+
+                    <label for="phone">Phone Number</label><br>
+                    <input type="number" name="phone" id="phoneNum" required><br><br>
+            
+
+                    <label for="email">Email Id</label><br>
+                    <input type="email" name="email" required><br><br>
+
+                </fieldset>
+
+                <fieldset id="form-1-section-3" class="form-section">
+
+                    <button type="submit" id="proceed">Proceed to Services</button>
+                    <button type="reset">Reset</button>
+                </fieldset><br><br>
+            
+            </form>
+        </div>
+
+        <div id="form-2" class="form-style" style="display: none;">
+
+            <form action="" method="POST">
+
+                <h3>Accomodation and Services</h3>
+
+                <fieldset id="form-2-section-1" class="form-section">
+
+                    <label for="hotel-select">Please Select Hotel for accomodation</label><br>
+                    <select name="hotel-select" id="hotel-select" required>
+                        <option value=0>Hotel-1 4star 3k/Night</option>
+                        <option value=1>Hotel-2 4star 3k/Night</option>
+                        <option value=2>Hotel-3 5star 4k/Night</option>
+                        <option value=3>Hotel-4 5star 4k/Night</option>
+                    </select><br><br>
+
+
+                    <div id="ck-button">
+                        <label class="checklabel" for="service1">
+                            <input class="checkbox" type="checkbox" name="service1" id="check1" value=0>
+                            <span>Laundary <br> Cost <span class="cost">500</span></span>
+                        </label>
+
+
+                        <label class="checklabel" for="service2">
+                            <input class="checkbox" type="checkbox" name="service2" id="check2" value=1>
+                            <span>Breakfast <br> Cost <span class="cost">600</span></span>
+                        </label>
+
+
+                        <label class="checklabel" for="service3">
+                            <input class="checkbox" type="checkbox" name="service3" id="check3" value=2>
+                            <span>Iron <br> Cost <span class="cost">1500</span></span>
+                        </label>
+
+
+                        <label class="checklabel" for="service4">
+                            <input class="checkbox" type="checkbox" name="service4" id="check4" value=3>
+                            <span>Taxi <br> Cost <span class="cost">1000</span></span>
+                        </label>
+
+
+                        <label class="checklabel" for="service5">
+                            <input class="checkbox" type="checkbox" name="service5" id="check5" value=4>
+                            <span>Valet <br> Cost <span class="cost">1200</span></span>
+                        </label>
+
+
+                        <label class="checklabel" for="service6">
+                            <input class="checkbox" type="checkbox" name="service6" id="check6" value=5>
+                            <span>Early check In extra <br> Cost <span class="cost">500</span></span>
+                        </label>
+                    </div><br><br>
+
+
+                </fieldset>
+
+                <fieldset id="form-2-section-3" class="form-section">
+
+                    <button type="submit" id="payment">Payment</button>
+                    <button type="reset">Reset</button>
+
+                </fieldset>
+
+            </form>
+        </div>
+
+        <div id="form-3" class="form-style" style="display: none;">
+
+            <form action="" method="POST" id="form-three">
+
+                <h3>Payment</h3>
+
+                <fieldset id="form-3-section-1" class="form-section">
+
+                    <p>Total Amount : <span id="total-amount"></span></p>
+
+                </fieldset><br><br>
+
+                <fieldset id="form-3-section-2" class="form-section">
+
+                    <legend>Card Details</legend>
+
+                    <label for="card-number">credit/debit card number  (16 digit)</label>
+                    <input type="number" id="cardNum" required><br><br>
+                   
+
+                    <label for="month-selector">to month</label>
+                    <select name="month-selector" id="month-selector">
+                        <option value=0>January</option>
+                        <option value=1>February</option>
+                        <option value=2>March</option>
+                        <option value=3>April</option>
+                        <option value=4>May</option>
+                        <option value=5>June</option>
+                        <option value=6>July</option>
+                        <option value=7>August</option>
+                        <option value=8>September</option>
+                        <option value=9>October</option>
+                        <option value=10>November</option>
+                        <option value=11>December</option>
+                    </select>
+
+                    <label for="year-selector">to year</label>
+                    <select name="year-selector" id="year-selector">
+                        <option value=2020>2020</option>
+                        <option value=2021>2021</option>
+                        <option value=2022>2022</option>
+                        <option value=2023>2023</option>
+                        <option value=2024>2024</option>
+                        <option value=2025>2025</option>
+                        <option value=2026>2026</option>
+                        <option value=2027>2027</option>
+                        <option value=2028>2028</option>
+                        <option value=2029>2029</option>
+                        <option value=2030>2030</option>
+                    </select><br><br>
+
+
+                    <label for="name-on-card">Name on Card</label>
+                    <input type="text" name="name-on-card" class="stringVerify" required><br><br>
+
+                    <label for="cvv">Security Code (cvv)</label>
+                    <input type="number" name="cvv" id="cvvNum" required><br><br>
+                
+
+                    <button type="button" id="otp">Generate OTP</button>
+                
+
+                </fieldset><br><br>
+
+                <fieldset id="authentication" disabled class="disabled">
+
+                    <legend>Authentication</legend>
+
+                    <label for="otp">Enter OTP recieved on registered mobile number</label>
+                    <input type="text" name="otp" id="otp-enter" value="" required>
+
+                </fieldset>
+
+                <fieldset id="form-3-section-3" class="form-section">
+
+                    <button type="submit" id="submit">Complete</button>
+                    <button type="reset">Reset</button>
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

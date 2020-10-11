@@ -1,0 +1,86 @@
+body {
+    background: url(assets/images/background.jpg);
+    background-size: cover;
+}
+
+.form-style {
+    width: 450px;
+    padding: 30px;
+    margin: 50px auto;
+    background: rgba(99, 0, 0, 0.288);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+    color: white;
+}
+
+.form-style label, legend {
+    font: 14px Arial, Helvetica, sans-serif;
+    margin-bottom: 15px;
+}
+
+h1, h3, p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #eee;
+}
+
+h1 {
+    text-align: left;
+}
+
+.form-style input[type="text"], .form-style input[type="email"], .form-style input[type="number"], .form-style textarea, .form-style select {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #fff;
+    background-color: rgb(0, 0, 0);
+    color: #eee;
+}
+
+.form-style button[type="reset"], .form-style button[type="submit"], .form-style button[type="button"] {
+    background: #2A88AD;
+    padding: 8px 20px 8px 20px;
+    color: #fff;
+    font: normal 30px 'Bitter', serif;
+    font-size: 15px;
+    border: 1px solid #257C9E;
+    text-transform: uppercase;
+}
+
+#forms {
+    display: grid;
+    grid-template-columns: 30% 30% auto;
+    grid-template-rows: auto;
+}
+
+#ck-button {
+    margin: 4px;
+    background-color: #0c0909;
+    border-radius: 2px;
+    border: 2px solid #D0D0D0;
+    overflow: auto;
+}
+
+#ck-button label span {
+    text-align: center;
+    padding: 3px 0px;
+    display: block;
+}
+
+#ck-button label input {
+    position: absolute;
+    cursor: pointer;
+}
+
+#ck-button input:checked+span {
+    background-color: rgb(189, 128, 128);
+    color: #fff;
+}
+
+.cost {
+    color: darkgreen;
+}
