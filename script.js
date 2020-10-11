@@ -151,4 +151,5 @@ document.getElementById("otp").onclick = function () {
 
 document.getElementById("form-3").onsubmit = function () {
     alert("Form submitted successfully");
+    return false;
 }
